@@ -1,4 +1,3 @@
-from re import T
 import streamlit as st
 
 import pandas as pd
@@ -6,8 +5,6 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import pickle
 import requests
-
-from app import rec_collaborative_filtering_by_user
 
 # user-to-user collaborative filtering
 with open('user_user_sim_matrix.pkl', 'rb') as f:
